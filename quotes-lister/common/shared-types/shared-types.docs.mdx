@@ -1,0 +1,31 @@
+---
+description: 'Shared types between the quote reader service and the quote lister component.'
+labels: ['bff', 'shared-types', 'quotes']
+---
+
+# Shared Types
+
+This module contains relevant types shared between the service and the front-end to avoid repeating code and help sharing a common interface.
+
+It only shared 2 different types:
+
+## QuoteType
+This type is the main interface describing how the data needs to be structured both on the backend and frontend.
+
+```typescript
+type QuoteType = {
+    text: string,
+    author: string
+}
+```
+
+## ServiceResponseType
+This is a simple type describing the structured of the returned data from the service. In other words, we're just stating that the service will return a list of quotes.
+
+```typescript
+type ServiceResponseType = QuoteType[]
+```
+
+
+
+

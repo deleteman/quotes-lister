@@ -1,0 +1,19 @@
+---
+description: 'A QuotesLister component.'
+labels: ['bff', 'shared-types', 'quotes']
+---
+
+import { QuotesLister } from './quotes-lister';
+
+## React Component for rendering quotes 
+
+This component renders a set of quotes returned by a backend service.
+The quotes have the following structure:
+
+- A text property with the actual quote.
+- An author property with the attribution of the quote.
+
+### Component usage
+```js
+<QuotesLister mock={true} />
+```
